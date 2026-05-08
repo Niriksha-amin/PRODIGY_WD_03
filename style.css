@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+/* Glass container */
+.container{
+    text-align:center;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+h1{
+    color:#7dd3fc;
+    margin-bottom:10px;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#cbd5e1;
+}
+
+/* Game Board */
+.board{
+    display:grid;
+    grid-template-columns:repeat(3,100px);
+    gap:15px;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.cell{
+    width:100px;
+    height:100px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cell:hover{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+/* Button */
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#38bdf8;
+    color:#0f172a;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#7dd3fc;
+}
